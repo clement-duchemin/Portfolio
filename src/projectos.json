@@ -1,0 +1,23 @@
+[
+    {
+        "id": "ksget8645",
+        "name": "Kasa",
+        "cover": "images/Kasa-try.png",
+        "tools":[
+            "REACT",
+            "HTML5",
+            "CSS3",
+            "SASS"
+        ]
+    },
+    {
+        "id": "dsygb8403",
+        "name": "ohmyfood",
+        "cover": "images/OMF-pic-portfolio-small.png",
+        "tools":[
+            "HTML5",
+            "CSS3",
+            "SASS"
+        ]
+    }
+]

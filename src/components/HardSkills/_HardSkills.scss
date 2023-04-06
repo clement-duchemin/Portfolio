@@ -1,0 +1,102 @@
+// @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+// .button-row {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+    
+// }
+
+// button.neon-btn {
+//     margin: 0;
+//     padding: 0;
+//     outline: 0;
+//     border: none;
+//     -webkit-user-select: none;
+//     -moz-user-select: none;
+//     background-color: transparent;
+//     margin: 10px;
+//     box-shadow: 0px 0px 25px 1px rgba(0, 0, 0, 0.4);   
+// }
+
+// .material-icons {
+//     background-color: #282c34;
+//     color: #FFFFFF;
+//     font-size: 48px;
+//     box-shadow: inset 0px 0px 46px -3px rgba(0, 0, 0, 0.36);
+//     border-radius: 3px;
+//     padding: 3px 5px;
+//     color: white;
+// }
+
+// button.active .material-icons{
+//     animation: glow 1.5s ease-in-out infinite alternate;
+// }
+// @keyframes glow {
+//     from{
+//         text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de,
+//         0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+//     }
+//     to{
+//         text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #ff00de,
+//         0 0 35px #ff00de, 0 0 40px #ff00de, 0 0 50px #ff00de, 0 0 75px #ff00de;
+//     }
+// }
+
+// button.active .material-icons{
+//     animation: glow 1.5s ease-in-out  infinite alternate;
+// }
+// @keyframes glow {
+//     from{
+//         color: red;
+//     }
+//     to{
+//         color: aqua;
+//     }
+// }
+
+
+.harskills-container {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fasthand', cursive;
+    padding: 2rem 2rem;
+    font-size: 2.5rem;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 3rem;
+        line-height: 3rem; 
+        padding: 3rem 3rem;
+    }
+}
+
+.icon-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-bottom: 25px;
+    
+   
+}
+
+.material-icons {
+    color: orange;
+    font-size: 100px;
+}
+
+
+.node:hover {
+    color: #3C873A;
+}
+
+.react:hover {
+    color: #61DBFB;
+}
+
+.sass:hover {
+    color: #CD6799;
+}

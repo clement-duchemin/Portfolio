@@ -1,0 +1,19 @@
+.footerwrapper {
+    border: 1px solid #282c34;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 100%;
+    color: #282c34;
+
+    &:hover {
+        background: #282c34;
+    }
+}
+
+.footer-paragraph {
+    color: white;
+}

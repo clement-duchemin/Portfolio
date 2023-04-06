@@ -1,0 +1,34 @@
+
+.title-container {   
+    height: 250px;
+    display: flex; 
+    padding: 2rem 2rem;
+}
+
+.title-root {
+    color: aliceblue;
+    font-size: 2rem;
+    line-height: 2rem;   
+    font-family: 'Hind Siliguri', sans-serif; 
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+
+    @media screen and (min-width: 568px) {
+        font-size: 3rem;
+        line-height: 3rem; 
+        padding: 3rem 3rem;
+    }
+}
+
+.span-e {
+    color: aqua;
+    transition: all 0.2s ease-in-out;
+    font-size: 3.5rem;
+    box-shadow: 0 2px 8px rgb(0, 0, 0);
+
+    &:hover {
+        font-size: 4rem;
+        font-family: Fasthand;
+        color: #282c34;
+        transition: all 0.2s ease-in-out;
+    }
+}

@@ -1,0 +1,71 @@
+.headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: white;
+    height: 90px;
+    width: 100%;
+    font-family: 'Fasthand', cursive;
+   
+}
+
+.ribbon-wrapper {
+    
+    position: absolute;
+    left: -10px;
+    height: 90px;
+    width: 120px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ribbon {
+    position: absolute;
+    width: 150%;
+    height: 40px;
+    background: red;
+    transform: rotate(-45deg);
+    font-size: 18px;
+    color: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.3);
+
+    &::before {
+        content: 'portfolio - portfolio - portfolio';
+        position: absolute;
+        width: 150%;
+        height: 40px;
+        background: red;
+        transform: rotate(-10deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+}
+
+.nav-header {
+    display: flex;
+    margin: 5%;
+    border-radius: 5px;
+    background-color: aqua;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    
+    &_link-home,
+	&_link-about {
+		text-decoration: none;
+		padding: 0 0.8rem;
+        
+        color: #585b61;
+        
+
+        &:hover {
+            color: black;
+        }
+    }
+}
