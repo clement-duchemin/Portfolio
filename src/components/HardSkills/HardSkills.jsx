@@ -2,6 +2,90 @@ import React from 'react';
 import { FaNode } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaSass } from "react-icons/fa";
+import technos from '../../data/technos'
+import {useState} from 'react';
+
+
+
+
+function HardSkills() {
+
+  // const [cursorX, setCursorX] = useState()
+  //   const [cursorY, setCursorY] = useState()
+  
+  //   window.addEventListener('mousemove', (e) => {
+  //     setCursorX(e.pageX)
+  //     setCursorY(e.pageY)
+  //   })
+
+return (
+<section className='harskills-container'>
+
+ {technos.map((techno, i) => (
+  <div className='icon-card ' key={i}>
+    {techno.icon.map((Icon, i) => (
+      <Icon className='material-icons' key={i}/>
+    ))}
+    <span>{techno.name}</span>
+</div>
+))}
+
+{/* <div className='cursor'
+  style={{
+    left: cursorX + 'px',
+    top: cursorY + 'px'
+  }}></div> */}
+     
+
+</section>
+)
+}
+
+export default HardSkills
+
+
+
+// <section className='harskills-container'>
+// <div className='icon-card '>
+//   <FaNode className='material-icons node'/><span>Node.js</span>
+// </div>
+// <div className='icon-card'>
+//   <FaReact className='material-icons react'/><span>React.js</span>
+// </div>
+// <div className='icon-card'>
+//   <FaSass className='material-icons sass'/><span>Sass</span>
+// </div>
+
+// </section>
+
+
+
+////:::::::////////////////////////
+
+// {/* <section className='harskills-container'>
+// {technos.map((techno, i) => (
+//   <div className='icon-card ' key={i}>
+//     {techno.icon.map((Icon, i) => (
+//       <a href=""><Icon className='material-icons' key={i}/></a>
+//     ))}
+//     <span>{techno.name}</span>
+// </div>
+// ))}
+
+// <div className='cursor'
+//   style={{
+//     left: cursorX + 'px',
+//     top: cursorY + 'px'
+//   }}></div>
+
+
+// </section> */}
+
+
+
+///////////////////////////////////
+
+
 //import "./_HardSkills.scss"
 //import { useState } from 'react';
 //import logo from "../../assets/github-logo.png"
@@ -25,20 +109,34 @@ import { FaSass } from "react-icons/fa";
 
 // export default HardSkills
 
-function HardSkills() {
-  return (
-    <section className='harskills-container'>
-      <div className='icon-card '>
-        <FaNode className='material-icons node'/><span>Node.js</span>
-      </div>
-      <div className='icon-card'>
-        <FaReact className='material-icons react'/><span>React.js</span>
-      </div>
-      <div className='icon-card'>
-        <FaSass className='material-icons sass'/><span>Sass</span>
-      </div>    
-    </section>
-  )
-}
 
-export default HardSkills
+/////////////////////////
+
+// function HardSkills() {
+
+//   const [cursorX, setCursorX] = useState()
+//   const [cursorY, setCursorY] = useState()
+
+//   window.addEventListener('mousemove', (e) => {
+//     setCursorX(e.pageX)
+//     setCursorY(e.pageY)
+//   })
+
+//   return (
+//     <div className='hardskills'>
+//     <ul>
+//       <li><a href="">Node.js</a></li>
+//       <li><a href="">React.js</a></li>
+//       <li><a href="">Sass</a></li>     
+
+//      <div className='cursor'
+//   style={{
+//     left: cursorX + 'px',
+//     top: cursorY + 'px'
+//   }}></div>
+//     </ul>
+//      </div>
+//   )
+// }
+
+// export default HardSkills

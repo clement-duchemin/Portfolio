@@ -1,29 +1,9 @@
-// const datas = [
-//     {
-//         "cover": "Kasa-pic-portfolio-small.png"
-//     },
-//     {
-//         "cover": "OMF-pic-portfolio-small.png"
-//     }
-// ]
-
 import { VscGithub } from "react-icons/vsc";
 import { TbWorldWww } from "react-icons/tb";
 
 
 
 
-
-// const links = [
-//     {
-//       to:"https://github.com/clement-duchemin/kasa/blob/master/src/pages/Home/Home.jsx",
-      
-//       icons: [
-//         VscGithub
-//       ]
-//     }
-   
-// ]
 
 const data =[
     {

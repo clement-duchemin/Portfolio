@@ -1,4 +1,53 @@
 .contact-container {
     background: #282c34;
-    height: 700px;
+    height: 800px;
+    box-shadow: inset 0 2px 8px rgb(0, 0, 0, 0.7);
+
 }
+
+.contact {
+    max-width: 500px;
+    margin: 0 auto;
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1rem;
+        color: white;
+
+        & span{
+            color: aqua;
+        }
+        
+
+        & input, textarea, button {
+            margin: 0.3rem 0 1rem 0;
+            padding: 0.3rem;
+            border-radius: 3px;
+            background: aliceblue;
+            box-shadow:  0 2px 8px rgb(0, 0, 0, 0.7);
+        }
+
+        & button {
+            font-size: 1rem;
+            font-family: 'Hind Siliguri', sans-serif;
+            color: #282c34;
+            border: 1px solid aqua;
+        }
+    }
+}
+
+.map-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map {
+    border: 1px solid aqua;
+    width: 80%;
+    height: 300px;
+    border-radius: 3px;
+}
+
+

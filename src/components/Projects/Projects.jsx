@@ -12,17 +12,6 @@ import data from '../../data/data'
 
 
 
-// const links = [
-//       {
-//         to:"https://github.com/clement-duchemin/kasa/blob/master/src/pages/Home/Home.jsx",
-//         id:"123",
-//         icons: [
-//           VscGithub
-//         ]
-//       }    
-// ]
- 
-
 
   function Projects() {
 

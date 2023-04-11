@@ -56,12 +56,18 @@
 // }
 
 
+
+
+////////////////////////////////////
+
 .harskills-container {
     display: flex;
     flex-direction: column;
     font-family: 'Fasthand', cursive;
     padding: 2rem 2rem;
     font-size: 2.5rem;
+    margin-top: 145px;
+    
 
     @media screen and (min-width: 768px) {
         flex-direction: row;
@@ -80,14 +86,31 @@
     color: white;
     margin-bottom: 25px;
     
-   
+    
+    &:hover ~ .cursor  {
+        transform: scale(5);
+    }
+    
 }
+
 
 .material-icons {
-    color: orange;
-    font-size: 100px;
+    display: inline-block;
+    color: grey;
+    font-size: 80px;
+    
+    
 }
 
+.cursor {
+    width: 20px;
+    height: 20px;
+    background-color: aliceblue;
+    position: fixed;
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
 
 .node:hover {
     color: #3C873A;
@@ -100,3 +123,55 @@
 .sass:hover {
     color: #CD6799;
 }
+
+
+
+////////////////////////////////////////
+/// 
+/// 
+
+
+// .hardskills {
+//     background-color: black;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     border: 1px solid red;
+//     height: 900px;
+//     margin-top: 40px;
+    
+// }
+
+// ul {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+// }
+
+// ul li {
+//     list-style: none;
+// }
+
+// ul li a {
+//     display: inline-block;
+//     text-decoration: none;
+//     color: aliceblue;
+//     font-size: 3rem;
+//     margin: 10px 0;
+//     padding: 0 20px;
+// }
+
+// ul li:hover ~ .cursor {
+//     transform: scale(50);
+// }
+
+
+// .cursor {
+//     width: 20px;
+//     height: 20px;
+//     background-color: white;
+//     position: fixed;
+//     border-radius: 50%;
+//     pointer-events: none;
+//     mix-blend-mode: difference;
+// }
