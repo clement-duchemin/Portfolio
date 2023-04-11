@@ -1,22 +1,15 @@
 import React from 'react';
-import { FaNode } from "react-icons/fa";
-import { FaReact } from "react-icons/fa";
-import { FaSass } from "react-icons/fa";
+//import { FaNode } from "react-icons/fa";
+//import { FaReact } from "react-icons/fa";
+//import { FaSass } from "react-icons/fa";
 import technos from '../../data/technos'
-import {useState} from 'react';
+//import {useState} from 'react';
 
 
 
 
 function HardSkills() {
 
-  // const [cursorX, setCursorX] = useState()
-  //   const [cursorY, setCursorY] = useState()
-  
-  //   window.addEventListener('mousemove', (e) => {
-  //     setCursorX(e.pageX)
-  //     setCursorY(e.pageY)
-  //   })
 
 return (
 <section className='harskills-container'>
@@ -30,11 +23,7 @@ return (
 </div>
 ))}
 
-{/* <div className='cursor'
-  style={{
-    left: cursorX + 'px',
-    top: cursorY + 'px'
-  }}></div> */}
+
      
 
 </section>
@@ -61,6 +50,14 @@ export default HardSkills
 
 
 ////:::::::////////////////////////
+
+ // const [cursorX, setCursorX] = useState()
+  //   const [cursorY, setCursorY] = useState()
+  
+  //   window.addEventListener('mousemove', (e) => {
+  //     setCursorX(e.pageX)
+  //     setCursorY(e.pageY)
+  //   })
 
 // {/* <section className='harskills-container'>
 // {technos.map((techno, i) => (

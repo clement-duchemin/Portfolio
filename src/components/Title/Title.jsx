@@ -44,7 +44,7 @@ function Title() {
               <span className='group-C'>v</span>
               <span className='aqua'>v</span>
               <span>e</span>
-              <pan>b</pan>
+              <span>b</span>
             </span>
               <span className='aqua'>.</span>
               <span className='group-round'>.</span>

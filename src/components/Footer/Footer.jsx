@@ -10,7 +10,7 @@ const socialLinks = [
   GTicon:[
     BsGithub
   ],
- 
+
   "INlink": "https://www.linkedin.com/in/clementduchemin/",
   INicon:[
     FaLinkedinIn
@@ -23,12 +23,12 @@ function Footer() {
   return (
     <footer className='footerwrapper'>
        {socialLinks.map((link, i) => (
-       <div className='social-menu'>
+       <div className='social-menu' key={i}>
         <div className='social-menu__github'>
           <div className='icon-wrapper'>
                 <Link to={link.GTlink} target="_blank" key={i} className='link'>
-                {link.GTicon.map((Icon, i) => (
-                <Icon className='social-icon github' key={i}/>))}
+                {link.GTicon.map((Icon, index) => (
+                <Icon className='social-icon github' key={index}/>))}
                 </Link>
           </div>      
                 
@@ -36,8 +36,8 @@ function Footer() {
         <div className='social-menu__linkedin'>
           <div className='icon-wrapper'>
                 <Link to={link.INlink} target="_blank" key={i}>
-                {link.INicon.map((Icon, i) => (
-                <Icon className='social-icon linkedin' key={i}/>))}
+                {link.INicon.map((Icon, index) => (
+                <Icon className='social-icon linkedin' key={index}/>))}
                 </Link>
           </div>       
                 

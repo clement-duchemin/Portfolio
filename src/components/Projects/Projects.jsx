@@ -28,7 +28,7 @@ import data from '../../data/data'
     
       <section className='projects-container'>
         <h2 className='projects-title'>
-            R<span className='span-e'>é</span>alisations.
+            R<span className='aqua'>é</span>alisations.
         </h2> 
         <div className='cards-container'> 
               {data.map((project) => (
