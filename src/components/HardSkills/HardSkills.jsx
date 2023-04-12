@@ -1,8 +1,12 @@
 import React from 'react';
-//import { FaNode } from "react-icons/fa";
-//import { FaReact } from "react-icons/fa";
-//import { FaSass } from "react-icons/fa";
-import technos from '../../data/technos'
+import { FaNode } from "react-icons/fa";
+import { FaReact } from "react-icons/fa";
+import { FaSass } from "react-icons/fa";
+import {AiOutlineHtml5} from "react-icons/ai"
+import {DiCss3} from "react-icons/di"
+import {BsGit} from "react-icons/bs"
+import {BsGithub} from "react-icons/bs"
+//import technos from '../../data/technos'
 //import {useState} from 'react';
 
 
@@ -12,19 +16,30 @@ function HardSkills() {
 
 
 return (
+
 <section className='harskills-container'>
 
- {technos.map((techno, i) => (
-  <div className='icon-card ' key={i}>
-    {techno.icon.map((Icon, i) => (
-      <Icon className='material-icons' key={i}/>
-    ))}
-    <span>{techno.name}</span>
+<div className='icon-card'>
+  <FaReact className='material-icons react'/><span>React.js</span>
 </div>
-))}
-
-
-     
+<div className='icon-card '>
+  <FaNode className='material-icons node'/><span>Node.js</span>
+</div>
+<div className='icon-card'>
+  <FaSass className='material-icons sass'/><span>Sass</span>
+</div>
+<div className='icon-card '>
+  <AiOutlineHtml5 className='material-icons html'/><span>Html</span>
+</div>
+<div className='icon-card '>
+  <DiCss3 className='material-icons css'/><span>CSS</span>
+</div>
+<div className='icon-card '>
+  <BsGit className='material-icons git'/><span>git</span>
+</div>
+<div className='icon-card '>
+  <BsGithub className='material-icons github'/><span>github</span>
+</div>
 
 </section>
 )

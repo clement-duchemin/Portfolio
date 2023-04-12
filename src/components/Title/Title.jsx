@@ -1,10 +1,12 @@
 import React from 'react'
+import pic from '../../assets/wall.jpg'
 
 
 function Title() {
   return (
     <section className='title-container'>
         <h1 className='title-root'>
+          <img src={pic} alt='kanap' />
             <span className='title-root__a'>
               <span className='group-A'>C</span>
               <span>l</span>
@@ -39,6 +41,7 @@ function Title() {
               <span className='group-B'>e</span>
               <span className='group-A'>u</span>
               <span className='group-bent'>r</span>
+            </span>  
               <br></br>
             <span className='title-root__d'>
               <span className='group-C'>v</span>
@@ -49,7 +52,7 @@ function Title() {
               <span className='aqua'>.</span>
               <span className='group-round'>.</span>
               <span className='group-last'>.</span>
-            </span>
+            
         </h1>
     </section>
   )

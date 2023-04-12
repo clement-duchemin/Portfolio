@@ -62,7 +62,9 @@
 
 .harskills-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
     font-family: 'Fasthand', cursive;
     padding: 2rem 2rem;
     font-size: 2.5rem;
@@ -70,9 +72,8 @@
     
 
     @media screen and (min-width: 768px) {
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+        
+        
         font-size: 3rem;
         line-height: 3rem; 
         padding: 3rem 3rem;
@@ -84,7 +85,7 @@
     flex-direction: column;
     align-items: center;
     color: white;
-    margin-bottom: 25px;
+    margin: 20px 15px 25px 15px;
     
     
     &:hover ~ .cursor  {
@@ -123,6 +124,33 @@
 .sass:hover {
     color: #CD6799;
 }
+
+.html:hover {
+    color: #e34c26;
+}
+
+.css:hover {
+    color: #2965f1;
+}
+
+.git:hover {
+    color: #F1502F;
+}
+
+.github:hover {
+    color: #171515;
+}
+
+
+////////////////////////////////////////////////
+
+
+
+
+
+
+
+
 
 
 
