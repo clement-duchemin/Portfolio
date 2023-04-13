@@ -2,8 +2,7 @@ import React from 'react'
 //import pic from '../../assets/wall.jpg'
 import pictures from '../../data/pictures'
 import { useState } from "react"
-import right from "../../assets/Vector-right.svg"
-import left from "../../assets/Vector-left.svg"
+
 
 function Title() {
   const [current, setCurrent] = useState(0);
@@ -12,14 +11,11 @@ function Title() {
   const nextSlide = () => {
     setCurrent(current === length -1 ? 0 : current +1) // On repart au premier slide quand on arrive au dernier
 }
-const previousSlide = () => {
-    setCurrent(current === 0 ? length -1 : current -1) // On repart au dernier slide quand on est au premier
-}
+
 
   return (
     <section className='title-container'>
         <h1 className='title-root'>
-          
           {pictures.map((picture, index) => (
             <div key={index} className={current === index ? 'slider' : null}>
             {index === current && <img src={picture} alt='mur' />}
