@@ -4,23 +4,30 @@
     display: flex; 
     justify-content: center;
     padding: 6rem 2rem 2rem 2rem;
-    
+    position: relative;
 }
 
 .title-root {
-    display: inline-block;
+    
     width: 100%;
     max-width: 500px;
-    color: aliceblue;
-    background-color: beige;
+    color: aliceblue;   
     font-size: 2rem;
     line-height: 2rem;   
     font-family: 'Hind Siliguri', sans-serif; 
-    box-shadow: 0 2px 8px rgb(0, 0, 0);
-    border: 11px solid grey;
-    height: 233px;
+    box-shadow: 0 2px 8px rgb(8, 34, 180);   
+    height: 333px;
     position: relative;
-    
+
+
+    @media screen and (min-width: 496px) {
+        font-size: 2rem;
+        line-height: 2rem; 
+        width: 100%;
+        max-width: 500px;
+        height: 333px;
+    }
+
     & img {
         width: 100%;
         height: 100%;
@@ -35,35 +42,82 @@
     }
 
     &__a {
-        
-        z-index: 2;
+        position: absolute;
+        left: 15%;
         opacity: 0.9;
+        bottom: 44%;
+
+        @media screen and (min-width: 496px) {
+            left: 20%;
+        }
     }
 
     &__b {
-        display: inline-block;
-        padding-left: 59px;
         opacity: 0.9;
-        
-        z-index: 1;
+        position: absolute;
+        left: 14%;
+        bottom: 33%;
+
+        @media screen and (min-width: 496px) {
+            left: 15%;
+        }
     }
 
     &__c {
-        
-        z-index: 1;
+        position: absolute;
         opacity: 0.9;
+        left: 6%;
+        bottom: 22%;
+
+        @media screen and (min-width: 496px) {
+            left: 12%;
+        }
     }
 
     &__d {
-        padding-left: 95px;
+        opacity: 0.9;
+        position: absolute;
+        left: 22%;
+        bottom: 10%;
+    
+        @media screen and (min-width: 496px) {
+            left: 34%;
+        }
+    }
+}
+
+.button {
+    position: absolute;
+    color: aliceblue;
+    cursor: pointer;
+    background-color: rgb(15, 6, 96);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgb(80, 99, 201);
+    padding: 1px 6px;
+    top: 199%;
+
+    &:hover {
+        box-shadow: 0 2px 8px rgb(230, 63, 63);
+        color: rgb(230, 63, 63);
+
+        animation: buttonAnim  100ms cubic-bezier(.4,.1,.6,.9) 3;
+    @keyframes buttonAnim {
+        25% {
+            
+            transform: translateX(2%);
+        }
+        75% {
+            
+            transform: translateX(2% * -1);
+        }
+    }
     }
 
-    @media screen and (min-width: 568px) {
-        font-size: 3rem;
-        line-height: 3rem; 
-        padding: 3rem 3rem;
-        
+    &:active {
+        box-shadow: none;
+        color: rgb(15, 6, 96);
     }
+
 }
 
 $num-cards: 3;

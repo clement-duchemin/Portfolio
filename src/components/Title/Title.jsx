@@ -1,12 +1,31 @@
 import React from 'react'
-import pic from '../../assets/wall.jpg'
-
+//import pic from '../../assets/wall.jpg'
+import pictures from '../../data/pictures'
+import { useState } from "react"
+import right from "../../assets/Vector-right.svg"
+import left from "../../assets/Vector-left.svg"
 
 function Title() {
+  const [current, setCurrent] = useState(0);
+  const length = pictures.length;
+
+  const nextSlide = () => {
+    setCurrent(current === length -1 ? 0 : current +1) // On repart au premier slide quand on arrive au dernier
+}
+const previousSlide = () => {
+    setCurrent(current === 0 ? length -1 : current -1) // On repart au dernier slide quand on est au premier
+}
+
   return (
     <section className='title-container'>
         <h1 className='title-root'>
-          <img src={pic} alt='kanap' />
+          
+          {pictures.map((picture, index) => (
+            <div key={index} className={current === index ? 'slider' : null}>
+            {index === current && <img src={picture} alt='mur' />}
+            </div>
+          ))}
+          
             <span className='title-root__a'>
               <span className='group-A'>C</span>
               <span>l</span>
@@ -48,12 +67,13 @@ function Title() {
               <span className='aqua'>v</span>
               <span>e</span>
               <span>b</span>
-            </span>
               <span className='aqua'>.</span>
               <span className='group-round'>.</span>
               <span className='group-last'>.</span>
-            
+            </span>
         </h1>
+        <div onClick={nextSlide}
+        className="button">Don't push me !</div>
     </section>
   )
 }

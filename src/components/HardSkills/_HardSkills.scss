@@ -66,9 +66,9 @@
     align-items: center;
     justify-content: center;
     font-family: 'Fasthand', cursive;
-    padding: 2rem 2rem;
+    padding: 3rem 2rem;
     font-size: 2.5rem;
-    margin-top: 145px;
+    margin-top: 250px;
     
 
     @media screen and (min-width: 768px) {
@@ -86,7 +86,17 @@
     align-items: center;
     color: white;
     margin: 20px 15px 25px 15px;
-    
+    position: relative;
+
+    &::after {
+        content: "";
+        border-top: 1px solid aqua;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 4px;
+        width: 43px;
+    }
     
     &:hover ~ .cursor  {
         transform: scale(5);
@@ -98,9 +108,7 @@
 .material-icons {
     display: inline-block;
     color: grey;
-    font-size: 80px;
-    
-    
+    font-size: 75px; 
 }
 
 .cursor {
