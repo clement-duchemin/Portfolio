@@ -5,10 +5,10 @@
     justify-content: center;
     padding: 6rem 2rem 2rem 2rem;
     position: relative;
+   
 }
 
 .title-root {
-    
     width: 100%;
     max-width: 500px;
     color: aliceblue;   
@@ -18,7 +18,7 @@
     box-shadow: 0 2px 8px rgb(8, 34, 180);   
     height: 333px;
     position: relative;
-
+    z-index: 12;
 
     @media screen and (min-width: 496px) {
         font-size: 2rem;
@@ -38,7 +38,8 @@
         bottom: 0%;
         mix-blend-mode: normal;
         object-fit: cover;
-        
+        border-radius: 3px;
+
     }
 
     &__a {
@@ -95,6 +96,7 @@
     box-shadow: 0 2px 8px rgb(80, 99, 201);
     padding: 1px 6px;
     top: 199%;
+    z-index: 1;
 
     &:hover {
         box-shadow: 0 2px 8px rgb(230, 63, 63);
@@ -119,6 +121,9 @@
     }
 
 }
+
+
+
 
 $num-cards: 3;
 $anim-dur: 1500ms;
@@ -287,17 +292,193 @@ $anim-delay: calc($anim-dur / $num-cards);
     }
 }
 
+// .pendulum-wrapper {
+//     height: 100%;
+//     width: 100%;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     position: fixed;
+//     z-index: 10;
+//     top: 0;
+//     left: 0;
+//     background-color: white;
+//     animation: BG 3s forwards ease-in-out;
+// }
 
-// .span-e {
-//     color: aqua;
-//     transition: all 0.2s ease-in-out;
-//     font-size: 3.5rem;
-//     box-shadow: 0 2px 8px rgb(0, 0, 0);
-
-//     &:hover {
-//         font-size: 4rem;
-//         font-family: Fasthand;
-//         color: #282c34;
-//         transition: all 0.2s ease-in-out;
+// @keyframes BG {
+//     0% {
+//         opacity: 1;
+//     }
+//     50% {
+//         opacity: 1;
+//     }
+//     100% {
+//         opacity: 0;
+//         z-index: -1;
 //     }
 // }
+
+// .pendulum {
+//     position: absolute;
+//     top: 18%;
+//     right: 9%;
+//     transform-origin: top;
+//     font-size: 3px;
+//     cursor: help;
+
+//     &:active {
+//         animation: pendulum 1.2s alternate ease-in-out infinite;
+//     }
+
+//     @keyframes pendulum {
+//         0% {
+//             transform: rotate(1deg);
+//         }
+//         100% {
+//             transform: rotate(-1deg);  
+//         }
+//     }
+// }
+
+// .cord {
+//     margin: 0 auto;
+//     min-height: 260px;
+//     width: 0.3em;
+//     background: grey;
+// }
+
+// .sphere {
+//     width: 16em;
+//     height: 16em;
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background: #000;
+//     border-radius: 50%;
+//     border: 1px solid #231406;
+
+//     &::before {
+//         content:'';
+//         position: absolute;
+//         top: 0.3em;
+//         left: 40%;
+//         width: 1.5em;
+//         height: 0.3em;
+//         background: #ffca98;
+//         filter: blur(0.3em);
+//     }
+
+//     &::after {
+//         content: '';
+//         position: absolute;
+//         bottom: 0.3em;
+//         right: 35%;
+//         width: 1.5em;
+//         height: 0.2em;
+//         background: #ffca98;
+//         filter: blur(0.3em);
+//     }
+
+//     &__bg {
+//         width: 10em;
+//         height: 10em;
+//         position: absolute;
+//         background: radial-gradient(circle, rgba(255,255,134,1) 0%, rgba(255,255,210,1) 100%);
+//         border-radius: 50%;
+//         border: 0.5 solid #676710;
+//         z-index: 10;
+//     }
+
+//     &__glow--in {
+//         width: 11em;
+//         height: 11em;
+//         position: absolute;
+//         border-radius: 50%;
+//         border-bottom: 1px solid #3c2d1e;
+//         background: #f7a456;
+//         filter: blur(0.6em);
+//     }
+
+//     &__glow--out {
+//         width: 20em;
+//         height: 20em;
+//         position: absolute;
+//         border-radius: 50%;
+//         background: #f7a456;
+//         opacity: 0.3;
+//         filter: blur(5em);
+//     }
+// }
+
+.neon-off {
+    position: absolute;
+    opacity: 0.3;
+    width: 50px;
+    color: aqua;
+    font-family: 'Fasthand', cursive;
+    width: 100%;
+    text-align: justify;
+}
+
+.neon {
+    position: absolute;
+    opacity: 0.2;
+    width: 50px;
+    color: grey;
+    font-family: 'Fasthand', cursive;
+    width: 100%;
+    text-align: justify;
+      
+}
+
+.animate {
+
+    animation: neon-anim 0.8s alternate ease-in-out 3;
+
+
+@keyframes neon-anim {
+    0% {
+        opacity: 0.3;
+        filter: drop-shadow(0px 0px 1px #e8fdfd)
+        drop-shadow(0px 0px 3px #dff4f4)
+        drop-shadow(0px 0px 10px #0dcfcf)
+        drop-shadow(0px 0px 30px #0daaaa)
+        drop-shadow(0px 0px 50px #0a8383)
+    }
+
+    100%{
+        opacity: 0.6;
+        filter: drop-shadow(0px 0px 1px #00ffff)
+        drop-shadow(0px 0px 3px #00ffff)
+        drop-shadow(0px 0px 10px #0dcfcf)
+        drop-shadow(0px 0px 30px #0daaaa)
+        drop-shadow(0px 0px 50px #0a8383)
+    }
+} 
+}
+
+
+.section-neon {
+    overflow: hidden;
+}
+
+
+
+
+
+
+// function multiplyText(text, num) {
+//     let multipliedText = '';
+//     for (let i = 0; i < num; i++) {
+//       multipliedText += text;
+//     }
+//     return multipliedText;
+//   }
+  
+//   // Example usage:
+//   const multiplied = multiplyText('Hello', 3); // Returns 'HelloHelloHello'
+  
+//   // Render the multiplied text:
+//   return <div>{multiplied}</div>;

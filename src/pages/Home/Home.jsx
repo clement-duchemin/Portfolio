@@ -5,15 +5,17 @@ import Projects from "../../components/Projects/Projects"
 function Home() {
   return (
     <main className="main">
-      <div className="section-title">
-        <Title />
+      <div className="section-neon">
+        <div className="section-title">
+          <Title />
+        </div>
+        <div className="section-hardSkills">
+          <HardSkills />
+        </div>
       </div>
-      <div className="section-hardSkills">
-        <HardSkills />
-      </div>
-      <div className="section-projects">
-        <Projects />
-      </div>
+        <div className="section-projects">
+          <Projects />
+        </div>
     </main>
   )
 }

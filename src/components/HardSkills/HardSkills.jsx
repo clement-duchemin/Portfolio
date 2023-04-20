@@ -6,6 +6,7 @@ import {AiOutlineHtml5} from "react-icons/ai"
 import {DiCss3} from "react-icons/di"
 import {BsGit} from "react-icons/bs"
 import {BsGithub} from "react-icons/bs"
+import {IoLogoJavascript} from "react-icons/io"
 //import technos from '../../data/technos'
 //import {useState} from 'react';
 
@@ -19,6 +20,9 @@ return (
 
 <section className='harskills-container'>
 
+<div className='icon-card '>
+  <IoLogoJavascript className='material-icons js'/><span>Javascript</span>
+</div>
 <div className='icon-card'>
   <FaReact className='material-icons react'/><span>React.js</span>
 </div>
@@ -26,7 +30,7 @@ return (
   <FaNode className='material-icons node'/><span>Node.js</span>
 </div>
 <div className='icon-card'>
-  <FaSass className='material-icons sass'/><span>Sass</span>
+  <FaSass className='material-icons sass'/><span translate="no">Sass</span>
 </div>
 <div className='icon-card '>
   <AiOutlineHtml5 className='material-icons html'/><span>Html</span>
