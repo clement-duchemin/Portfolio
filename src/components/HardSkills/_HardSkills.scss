@@ -72,8 +72,6 @@
     
 
     @media screen and (min-width: 768px) {
-        
-        
         font-size: 3rem;
         line-height: 3rem; 
         padding: 3rem 3rem;
@@ -87,6 +85,10 @@
     color: white;
     margin: 20px 15px 25px 15px;
     position: relative;
+
+    & span {
+        font-size: 28px;
+    }
 
     &::after {
         content: "";
@@ -108,7 +110,7 @@
 .material-icons {
     display: inline-block;
     color: grey;
-    font-size: 75px; 
+    font-size: 60px; 
 }
 
 .cursor {
@@ -154,6 +156,20 @@
     color: #171515;
 }
 
+.section-neon {
+    overflow: hidden;
+    position: relative;
+    img{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        object-fit: cover;
+    }
+}
 
 ////////////////////////////////////////////////
 

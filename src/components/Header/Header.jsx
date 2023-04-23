@@ -20,6 +20,9 @@ function Header() {
             <Link to="/contact" className="nav-header_link-about">
 				        contact
 			      </Link>
+            <a href='https://drive.google.com/file/d/1qYax791UMrClPBS1y8DXbAQRikuHSxIv/view?usp=sharing'
+             alt="lien-CV" download target="_blank" rel="noreferrer" 
+             className="nav-header_link-cv">CV</a>
         </nav>
     </header>
   )

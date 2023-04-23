@@ -14,13 +14,13 @@ function Contact() {
             >
 
             <input type="hidden" name="form-name" value="contact" />
-            <label htmlFor="name">Nom: </label>
+            <label htmlFor="name">Nom </label>
             <input type="text" name="name"/>
 
-            <label htmlFor="email"> <span>E</span>mail: </label>
+            <label htmlFor="email">Email </label>
             <input type="email" name="email"/>
          
-            <label htmlFor="message">Message: </label>
+            <label htmlFor="message">Message </label>
             <textarea name="message"></textarea>
          
             <button type="submit">Envoyer</button>

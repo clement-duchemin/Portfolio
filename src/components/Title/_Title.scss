@@ -5,7 +5,6 @@
     justify-content: center;
     padding: 6rem 2rem 2rem 2rem;
     position: relative;
-   
 }
 
 .title-root {
@@ -15,10 +14,11 @@
     font-size: 2rem;
     line-height: 2rem;   
     font-family: 'Hind Siliguri', sans-serif; 
-    box-shadow: 0 2px 8px rgb(8, 34, 180);   
     height: 333px;
     position: relative;
     z-index: 12;
+    box-shadow: 0 2px 8px rgb(8, 34, 180);   
+
 
     @media screen and (min-width: 496px) {
         font-size: 2rem;
@@ -412,15 +412,15 @@ $anim-delay: calc($anim-dur / $num-cards);
 //     }
 // }
 
-.neon-off {
-    position: absolute;
-    opacity: 0.3;
-    width: 50px;
-    color: aqua;
-    font-family: 'Fasthand', cursive;
-    width: 100%;
-    text-align: justify;
-}
+// .neon-off {
+//     position: absolute;
+//     opacity: 0.3;
+//     width: 50px;
+//     color: aqua;
+//     font-family: 'Fasthand', cursive;
+//     width: 100%;
+//     text-align: justify;
+// }
 
 .neon {
     position: absolute;
@@ -430,7 +430,8 @@ $anim-delay: calc($anim-dur / $num-cards);
     font-family: 'Fasthand', cursive;
     width: 100%;
     text-align: justify;
-      
+    cursor: help;
+    display: none;
 }
 
 .animate {
@@ -460,9 +461,6 @@ $anim-delay: calc($anim-dur / $num-cards);
 }
 
 
-.section-neon {
-    overflow: hidden;
-}
 
 
 
