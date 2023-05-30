@@ -97,6 +97,25 @@ const data =[
         WEBicon:[
             TbWorldWww
         ],
+    },
+    {
+        "id": "gtsql5423",
+        "name": "Pick your country",
+        "cover": "/images/pick_your_country.jpeg",
+        "tools":[
+            "JAVASCRIPT",
+            "HTML5",
+            "CSS3",
+            "SASS"
+        ],
+        "GTlink": "https://github.com/clement-duchemin/REST-COUNTRIES-API",
+        GTicon:[
+            VscGithub
+        ], 
+        "WEBlink": "https://pickyourcountry.netlify.app",
+        WEBicon:[
+            TbWorldWww
+        ],
     }
 ]
 
