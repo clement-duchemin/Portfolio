@@ -1,0 +1,155 @@
+.section-image {
+    overflow: hidden;
+    position: relative;
+    height: 1000px;
+    img{
+        width: 100%;
+        height: 100%;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 0%;
+        object-fit: cover;
+        position: absolute;
+    }
+}
+
+.button {
+    position: absolute;
+    color: aliceblue;
+    cursor: pointer;
+    border-radius: 100px;
+    width: 32px;
+    height: 10px;
+    top: 2%;
+    left: 50%;
+    z-index: 1111;
+
+    &__icon {
+        font-size: 58px;
+        color: aqua;
+    }
+}
+
+.cloud {
+    position: absolute;
+    color: aliceblue;
+    cursor: pointer;
+    background-color: white;
+    border-radius: 100px;
+    width: 320px;
+    height: 100px;
+    top: 22%;
+    left: 50%;
+    z-index: 1111;
+
+
+    &:before {
+        content:'';
+        position: absolute;
+        top: -41%;
+        width: 110px;
+        height: 110px;
+        background-color: white;
+        border-radius: 50px;
+        left: 15%;
+        box-shadow: 90px 0 0 30px white;
+    }
+
+    &:hover {
+        box-shadow: 0 2px 8px rgb(230, 63, 63);
+        color: rgb(230, 63, 63);
+
+        animation: buttonAnim  100ms cubic-bezier(.4,.1,.6,.9) 3;
+    @keyframes buttonAnim {
+        25% {
+            
+            transform: translateX(2%);
+        }
+        75% {
+            
+            transform: translateX(2% * -1);
+        }
+    }
+    }
+
+    &:active {
+        box-shadow: none;
+        color: rgb(15, 6, 96);
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+// @keyframes rain {
+//     0% {
+//         transform: translateY(0) scale(1);
+//     }
+//     70% {
+//         transform: translateY(298px) scale(1);
+//     }
+//     100% {
+//         transform: translateY(298px) scale(0);
+//     }
+// }
+
+
+// animation: rain 5s linear infinite;
+// animation-duration: calc(15s / var(--i));
+// transform-origin: bottom;
+
+
+// margin: 0 2px;
+// z-index: 9991;
+// color: red;
+// border-radius: 50%;
+// left: 50%;
+
+
+
+
+
+// .button {
+//     position: absolute;
+//     color: aliceblue;
+//     cursor: pointer;
+//     background-color: rgb(15, 6, 96);
+//     border-radius: 10px;
+//     box-shadow: 0 2px 8px rgb(80, 99, 201);
+//     padding: 1px 6px;
+//     top: 2%;
+//     left: 50%;
+//     z-index: 1111;
+
+//     &:hover {
+//         box-shadow: 0 2px 8px rgb(230, 63, 63);
+//         color: rgb(230, 63, 63);
+
+//         animation: buttonAnim  100ms cubic-bezier(.4,.1,.6,.9) 3;
+//     @keyframes buttonAnim {
+//         25% {
+            
+//             transform: translateX(2%);
+//         }
+//         75% {
+            
+//             transform: translateX(2% * -1);
+//         }
+//     }
+//     }
+
+//     &:active {
+//         box-shadow: none;
+//         color: rgb(15, 6, 96);
+//     }
+
+// }

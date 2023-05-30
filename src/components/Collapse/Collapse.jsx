@@ -48,6 +48,7 @@ function Collapse() {
              alt="lien-CV" download target="_blank" rel="noreferrer" 
              className="cv">CV
         </a>
+
     </div>
   )
 }

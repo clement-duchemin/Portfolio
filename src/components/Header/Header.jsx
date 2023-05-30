@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom";
+//import pictures from '../../data/pictures'
+//import { useState } from "react"
 
 
 
@@ -8,11 +10,12 @@ import { Link } from "react-router-dom";
 
 
 function Header() {
+
+ 
+
   return (
     <header className="headerWrapper">
-        <div className="ribbon-wrapper">
-          <span className="ribbon">portfolio-portfolio-portfolio</span>
-        </div>
+     
         <nav className="nav-header">
             <Link to="/" className="nav-header_link-home">
                 accueil
